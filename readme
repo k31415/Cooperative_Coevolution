@@ -1,24 +1,53 @@
------Folder Code: 
-The evolution can be started through "python3 main.py". This script gets parameters from config-aerial, config-ground and simulator.py. It saves its results in the Results-folder. 
+Performance of Cooperative Coevolution in Different Scenarios with Heterogeneous
+Robot Teams
 
-Plots are created through "python3 plot_[type].py". 
-- The plot_evaluation script generates a plot of the evolution of the fitness for each input file and a summary plot for each variant (such as fiftc, riftc, ...). 
-- The plot_simulation script generates an animated video of the best pair for ont input file.
-- The plot_path script generates a plot for each input file where the paths of the best pair of robots is shown. 
+Abstract:
+Heterogeneous robot teams have the potential to solve a great variety of tasks.
+Cooperative Coevolutionary algorithms are used to evolve the behaviour of robots
+and their abilities to cooperate with each other. The NeuroEvolution of
+Augmenting Topologies algorithm used here is able to evolve the controllers of
+several robots simultaneously with more flexibility than other evolutionary
+algorithms. In this paper, two morphologically heterogeneous robots have to
+solve a token collection task in different scenarios. A strong aerial robot has
+to lead a ground robot with fewer sensor capabilities to collect the token.
+Their behaviour and learning speed is analyzed in variants with increasing
+difficulty. In contrast to a similar experiment from \citet{Gomes16} the robots
+in this paper do not learn to cooperate. Instead the ground robot learns a
+strategy to collect some tokens independent of the aerial robot.
 
-The final_evaluation.py script redoes the final evaluation of each best pair per generation. This script is not fully tested so there is no garanty for its correct functionality. 
+
+
+-----Folder Code:
+The evolution can be started through "python3 main.py". This script gets
+parameters from config-aerial, config-ground and simulator.py. It saves its
+results in the Results-folder.
+
+Plots are created through "python3 plot_[type].py".
+- The plot_evaluation script generates a plot of the evolution of the fitness
+  for each input file and a summary plot for each variant (such as fiftc,
+  riftc, ...).
+- The plot_simulation script generates an animated video of the best pair for
+  one input file.
+- The plot_path script generates a plot for each input file where the paths of
+  the best pair of robots is shown.
+
+The final_evaluation.py script redoes the final evaluation of each best pair per
+generation. This script is not fully tested so there is no garanty for its
+correct functionality.
 
 
 
 
------Folder Results: 
-Results and plots of the runs stated in the paper "Performance of Cooperative Coevolution in Different Scenarios with Heterogeneous Robot Teams" from Katharina Spitzley. 
+-----Folder Results:
+Results and plots of the runs stated in the paper "Performance of Cooperative
+Coevolution in Different Scenarios with Heterogeneous Robot Teams" from
+Katharina Spitzley.
 
-- Folder animation: 
+- Folder animation:
 Here the animation videos created with plot_animation.py will be saved.
 
-- Folder evolutions: 
+- Folder evolutions:
 Here the plots from plot_evolution.py will be saved.
 
-- Folder trajectories: 
+- Folder trajectories:
 Here the trajectory plots from plot_path.py will be saved.
